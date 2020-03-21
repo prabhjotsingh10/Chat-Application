@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    grid-gap: 1em;
+    margin: 5em;
+}
+
+.contacts ul {
+    list-style-type: none;
+}
+
+.contacts ul li{
+    margin-top: 2em;
+}
+
+.stay_connected{
+    /* display: flex; */
+    align-self: center;
+    text-align: center;
+}
+
+.sty_cntd{
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+}
