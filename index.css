@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Merienda&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Merienda', cursive;
 }
 
 hr{
@@ -11,31 +14,65 @@ hr{
     border:0.5px solid lightgray ;
 }
 
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background: url("/img/Back.jpg");
+    background-size:contain ;
+}
+
+.logo{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 .app{
     display: grid;
-    grid-template-columns: 0.2fr 0.8fr;
+    grid-template-columns: 0.4fr 0.6fr;
     grid-gap: 1em;
     margin: 3em;
+    position: relative;
+    box-shadow: 0.2em 0.2em 0.5em #808080;
+    background-color: #ffffff;
+    height: 40em;
+    /* width: 60em; */
+    max-width: 250em;
+}
+
+.chatmate{
+    color: #009638;
+    margin:0.5em;
+    display: block;
+    position: relative;
+}
+
+.sgn_out{
+    display:block;
+    text-decoration: none;
+    text-align: end;
 }
 
 .contacts ul {
     list-style-type: none;
 }
 
-.contacts ul li{
-    margin: 1em 0em;
-}
 
 .stay_connected{
     /* display: flex; */
     align-self: center;
     text-align: center;
+    width: 60em;    ;
 }
 
 .sty_cntd{
     display: block;
     margin-bottom: 1em;
     text-align: center;
+    color:#009638;
 }
 
 .img1{
@@ -49,8 +86,14 @@ hr{
 
 .cntc_1{
     display: grid;
-    grid-template-columns: 0.3fr 0.7fr;
-    margin-left: 0.5em;
+    grid-template-columns: 0.2fr 0.8fr;
+    margin: 0.5em;
+}
+
+.username
+{
+    display: block;
+    text-align: end;
 }
 
 .details p{
@@ -59,4 +102,63 @@ hr{
 
 .contacts{
     border: 1px solid lightgray;
+    overflow: scroll;
+    min-width: 25em;
+}
+
+.user_profile{
+    text-align: center;
+    margin-bottom: 2em;
+    color: #808080;
+    margin-top: 0.5em;
+}
+
+.user_profile h3{
+    color: #009638;
+}
+
+.dm:hover{
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+.strt_cnvo{
+    margin-bottom: 1em;
+    color: #009638;
+}
+
+.grp_chat li{
+    margin-top: 1em;
+}
+
+#grp_cnvo{
+    margin-top: 2em;
+}
+
+.msgbox{
+    /* display: flex; */
+    justify-self: center;
+    min-width: 60em;
+    max-width: 80em;
+    resize: none;   
+}
+
+.snd_msg{
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    border-radius: 0.2em;
+    cursor: pointer;
+    color: #009638;
+    background-color: white;
+    font-size: 1em;
+}
+
+.msg_div{
+    display: grid;
+    grid-template-columns: 0.1fr 0.8fr 0.1fr; 
+    margin-top: 4em;
+    grid-gap: 1em;
+    position: absolute;
+    bottom: 0.2em;
 }
