@@ -6,7 +6,7 @@
 
 document.querySelector("#details").addEventListener("click", ()=>{
     document.getElementById("stay_cntd").innerHTML = `<h1 class="strt_cnvo"> Start a Conversation </h1>
-    <p> Send hello to your friend ! </p>
+    <p> Send hello to your friend Pete! </p>
     <div class="msg_div">
     <button class="snd_msg"> <i class="far fa-grin"></i> </button>
     <textarea class="msgbox" placeholder ="Say Hi..."></textarea>
