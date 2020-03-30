@@ -1,124 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatMate</title>
-    <script src="https://kit.fontawesome.com/d8743a4f35.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-</head>
-<body>
-   <article class="main"> 
-    <section class="app">
-        <div class="contacts">
-            <ul>
-                <li class="logo_and_usrnme">
-                <div class="chatmate">
-                    <h3 class="logo">ChatMate</h3> <h4 class="username">Prabhjot Singh</h4> <a href="#" class="sgn_out">Sign Out <i class="fas fa-sign-out-alt"></i></a>
-                </div>
-                </li>
-                <li>
-                    <div class="user_profile">
-                        <h3>Direct Messages <i class="fas fa-sort-down"></i></h3>
-                    </div>
-                </li>
-                <li class="dm">
-                    <div class="cntc_1">
-                        <img src="img/img.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                        <div class="details" id="details">
-                        <h3>Pete</h3>
-                        <p>Heyy</p>
-                        </div>
-                    </div>
-                    <hr>
-                </li>
-                <li class="dm">
-                    <div class="cntc_1">
-                        <img src="img/Jess.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                        
-                        <div class="details" id="details1">
-                        <h3>Jess</h3>
-                        <p class="jess_msg">Movie Night tonight?</p>                    
-                        </div>
-                    </div>
-                    <hr>
-                </li>
-                
-                <li class="dm">
-                    <div class="cntc_1">
-                        <img src="img/img.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                        <div class="details" id="details2">
-                        <h3>Kevin</h3>
-                        <p>{new message}</p>
-                        </div>  
-                    </div>
-                    <hr>
-                </li>
-                
-                <li class="dm">
-                    <div class="cntc_1">
-                        <img src="img/img.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                        <div class="details" id="details3">
-                        <h3>Neil</h3>
-                        <p>{new message}</p>
-                        </div>
-                    </div>
-                    <hr>
-                </li>
-            </ul>
-            
-                <div class="user_profile" id="grp_cnvo">
-                    <h3>Group Conversations <i class="fas fa-sort-down"></i></h3>
-                </div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>React Manual Import</title>
+		<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
 
-                <ul class="grp_chat">
-                    <li class="dm">
-                        <div class="cntc_1">
-                            <img src="img/img.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                            <div class="details">
-                            <h3>Coders United</h3>
-                            <p>What's Up Everybody? </p>
-                            </div>
-                        </div>
-                        <hr>
-                    </li>
-
-                    <li class="dm">
-                        <div class="cntc_1">
-                            <img src="img/img.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                            <div class="details">
-                            <h3>F.R.I.E.N.D.S</h3>
-                            <p>Wanna catch a movie tonight? </p>
-                            </div>
-                        </div>
-                        <hr>
-                    </li>
-                    
-                    <li class="dm">
-                        <div class="cntc_1">
-                            <img src="img/img.jpg" alt="Pete" width="55em" height="55em" class="img1">
-                            <div class="details">
-                            <h3>Humber Media Pros</h3>
-                            <p>Our assignment is due fellas! Let's get to it!</p>
-                            </div>
-                        </div>
-                        <hr>
-                    </li>
-
-
-                </ul>
-            
-        </div>
-
-        <div class="stay_connected" id="stay_cntd">
-
-            <h1 class="sty_cntd">Stay Connected for more messages</h1>
-            <p>The app connects to your phone to sync messages. To reduce data usage, connect your phone to WiFi.</p>
-            <p>Click on a chat to get started.</p>
-        </div>
-    </section>
-</article>
-<script src="js/index.js"></script>
-</body>
+		<article class="main" id="root"> 
+			
+		</article>
+		<!-- Load up Babel, React, and React DOM from CDN links -->
+		<script crossorigin src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+		<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+		<script src="js/index.js" type="text/babel"></script>
+	</body>
 </html>
