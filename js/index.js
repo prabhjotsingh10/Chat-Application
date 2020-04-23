@@ -13,6 +13,19 @@
 //   <button className="snd_msg"> <i className="fas fa-paper-plane"></i> </button>
 //   </div>`
 // })
+
+let chatDisplay = (event) =>{
+  // document.querySelector("#details").addEventListener("click", ()=>{
+      document.getElementById("stay_cntd").innerHTML = `<h1 className="strt_cnvo"> Start a Conversation </h1>
+      <p> Send hello to your friend Pete! </p>
+      <div className="msg_div">
+      <button className="snd_msg"> <i className="far fa-grin"></i> </button>
+      <textarea className="msgbox" placeholder ="Say Hi..."></textarea>
+      <button className="snd_msg"> <i className="fas fa-paper-plane"></i> </button>
+      </div>`
+    
+  }
+
 const Contact = () => {
   
     return (
@@ -30,7 +43,7 @@ const Contact = () => {
               </div>
             </li>
             <li className="dm">
-              <div className="cntc_1">
+              <div className="cntc_1"  onClick = {chatDisplay}>
                 <img src="img/img.jpg" alt="Pete" width="55em" height="55em" className="img1" />
                 <div className="details" id="details">
                   <h3>Pete</h3>
